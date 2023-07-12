@@ -7,7 +7,6 @@ Navigation bar/sidebar/Overview box: white
 Accent blue: #5e9cae
 
 FONT-FAMILY is Helvetica, Arial, sans-serif;
-
 Width for main container should be 1000px.
 
 */
@@ -81,7 +80,7 @@ body{
         grid-row-gap: 1.5em;
         grid-template-areas:"mainPic aside"
                             "article article"
-                            "ads ads"
+                            "ads ads";
     }
     .mainPic{
         grid-area: mainPic;
@@ -156,3 +155,25 @@ body{
         font-size: 0.8em;
         line-height: 2em;
     }
+
+    @media only screen and (max-width: 850px) {
+        main{
+            grid-template-areas:"mainPic mainPic"
+                                "aside aside"
+                                "article article"
+                                "ads ads";
+        }
+        nav ul{
+            flex-direction: column;
+            padding-left: 0;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        nav ul li a{
+            display: block;
+            text-align: center;
+            border: 1px solid gray;
+        }
+    }
+    

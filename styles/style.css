@@ -5,7 +5,6 @@ Background: #e6e6e6;
 Header and Footer Black: #1b1b1b
 Navigation bar/sidebar/Overview box: white
 Accent blue: #5e9cae
-
 FONT-FAMILY is Helvetica, Arial, sans-serif;
 Width for main container should be 1000px.
 
@@ -155,7 +154,7 @@ body{
         font-size: 0.8em;
         line-height: 2em;
     }
-
+/*RESPONSIVENESS*/
     @media only screen and (max-width: 850px) {
         main{
             grid-template-areas:"mainPic mainPic"

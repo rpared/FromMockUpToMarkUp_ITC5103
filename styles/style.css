@@ -156,12 +156,22 @@ body{
     }
 /*RESPONSIVENESS*/
     @media only screen and (max-width: 850px) {
+        
+        header{
+            padding-left: 1em;
+        }
+
+        header .logo img{
+            max-width: 100%;
+        }
+
         main{
             grid-template-areas:"mainPic mainPic"
                                 "aside aside"
                                 "article article"
                                 "ads ads";
         }
+        
         nav ul{
             flex-direction: column;
             padding-left: 0;
